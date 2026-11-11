@@ -217,14 +217,18 @@ for i, c in enumerate(COMPANIES):
     brand, brand_ink, brand_soft = c["colors"]
     page += (f'<body class="company-page" style="--brand:{brand};--brand-ink:{brand_ink};--brand-soft:{brand_soft}">\n'
              + topbar(up, c["slug"]))
-    page += f"""<main>
+    page += f"""<div class="company-bar">
+  <div class="wrap narrow bar-inner">
+    <a class="bar-back" href="../index.html"><span aria-hidden="true">←</span> All companies</a>
+    <h1 class="bar-name">{name}</h1>
+  </div>
+</div>
+<main>
   <section class="company-hero">
     <div class="wrap narrow">
-      <a class="crumb" href="../index.html"><span aria-hidden="true">←</span> All companies</a>
-      <div class="brand-card">
+      <div class="brand-logo" role="img" aria-label="{name} logo">
         {brand_img}
       </div>
-      <h1 class="company-name">{name}</h1>
     </div>
   </section>
 
