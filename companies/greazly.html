@@ -5,63 +5,107 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Greazly · Techstars Future of Food</title>
 <meta name="description" content="Greazly at Techstars Future of Food Demo Day.">
+<meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="company-page" style="--brand:#2B2B2B;--brand-ink:#111111;--brand-soft:#F0EFEC">
 <header class="topbar">
-  <a class="back" href="../index.html">← All companies</a>
+  <a class="wordmark" href="../index.html">
+    <span class="wm-main">techstars<span class="wm-us">_</span></span>
+    <span class="wm-sub">Future of Food</span>
+  </a>
+  <span class="pill">Demo Day</span>
   <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
 </header>
 <div class="menu-scrim"></div>
 <nav class="menu" id="menu" aria-label="Site">
-  <button class="close" aria-label="Close menu">&times;</button>
-  <ul><li><a href="../index.html">Demo Day home</a></li></ul>
-  <h2>Companies</h2>
-  <ul>
-      <li><a href="../companies/shelflife.html">ShelfLife</a></li>
-      <li><a href="../companies/2daloop.html">2DaLoop</a></li>
-      <li><a href="../companies/greazly.html" aria-current="page">Greazly</a></li>
-      <li><a href="../companies/skyacres.html">SkyAcres</a></li>
-      <li><a href="../companies/verde.html">Verde Biomaterials</a></li>
-      <li><a href="../companies/nanofreeze.html">NanoFreeze</a></li>
-      <li><a href="../companies/pinto.html">Pinto Robotics</a></li>
-      <li><a href="../companies/oscar.html">Oscar</a></li>
+  <div class="menu-head">
+    <span class="menu-title">Demo Day</span>
+    <button class="close" aria-label="Close menu">&times;</button>
+  </div>
+  <ul class="menu-home"><li><a href="../index.html">All companies</a></li></ul>
+  <p class="menu-label">Companies</p>
+  <ul class="menu-list">
+      <li><a href="../companies/shelflife.html"><img src="../assets/logos/shelflife.png" alt="">ShelfLife</a></li>
+      <li><a href="../companies/2daloop.html"><img src="../assets/logos/2daloop.png" alt="">2DaLoop</a></li>
+      <li><a href="../companies/greazly.html" aria-current="page"><img src="../assets/logos/greazly.png" alt="">Greazly</a></li>
+      <li><a href="../companies/skyacres.html"><img src="../assets/logos/skyacres.png" alt="">SkyAcres</a></li>
+      <li><a href="../companies/verde.html"><img src="../assets/logos/verde.png" alt="">Verde Biomaterials</a></li>
+      <li><a href="../companies/nanofreeze.html"><img src="../assets/logos/nanofreeze.png" alt="">NanoFreeze</a></li>
+      <li><a href="../companies/pinto.html"><img src="../assets/logos/pinto.png" alt="">Pinto Robotics</a></li>
+      <li><a href="../companies/oscar.html"><img src="../assets/logos/oscar.png" alt="">Oscar</a></li>
   </ul>
 </nav>
-<main class="company">
-  <h1 class="brand"><img src="../assets/logos/greazly.png" alt="Greazly"></h1>
-
-  <section class="what">
-    <div class="card">
-      <h2>What We Do:</h2>
-      <p><span class="placeholder">Add a 2–4 sentence description of what Greazly does.</span></p>
+<main>
+  <section class="company-hero">
+    <div class="wrap narrow">
+      <a class="crumb" href="../index.html"><span aria-hidden="true">←</span> All companies</a>
+      <div class="brand-card">
+        <img src="../assets/logos/greazly.png" alt="">
+      </div>
+      <h1 class="company-name">Greazly</h1>
     </div>
   </section>
 
-  <section class="who">
-    <h2>Who We Are:</h2>
-    <ul class="team">
-    <li><span class="placeholder">Founder Name - Title</span></li>
-    <li><span class="placeholder">Founder Name - Title</span></li>
-    </ul>
-  </section>
+  <div class="wrap narrow company-body">
+    <section class="block what">
+      <h2>What We Do</h2>
+      <div class="what-card">
+        <p class="placeholder">Add a 2–4 sentence description of what Greazly does.</p>
+      </div>
+    </section>
 
-  <section class="connect">
-    <h2>Connect With Us:</h2>
-    <div class="row">
-      <a class="li" href="#" target="_blank" rel="noopener" aria-label="Greazly on LinkedIn"><img src="../assets/linkedin.png" alt="LinkedIn"></a>
-      <span class="email"><span class="placeholder">contact@company.com</span></span>
-    </div>
-  </section>
+    <section class="block who">
+      <h2>Who We Are</h2>
+      <ul class="team">
+      <li class="person is-placeholder">
+        <span class="avatar" aria-hidden="true">?</span>
+        <span><span class="p-name">Founder Name</span><span class="p-role">Title</span></span>
+      </li>
+      <li class="person is-placeholder">
+        <span class="avatar" aria-hidden="true">?</span>
+        <span><span class="p-name">Founder Name</span><span class="p-role">Title</span></span>
+      </li>
+      </ul>
+    </section>
 
-  <nav class="pager" aria-label="More companies">
-    <a href="2daloop.html">← 2DaLoop</a>
-    <a href="skyacres.html">SkyAcres →</a>
-  </nav>
+    <section class="block connect">
+      <h2>Connect With Us</h2>
+      <div class="btn-row">
+        <span class="btn btn-li is-placeholder" title="LinkedIn link coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.6h.06c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.77 2.5 4.77 5.75v5.6h-4v-4.96c0-1.18-.02-2.7-1.7-2.7-1.7 0-1.96 1.28-1.96 2.6v5.06h-4z"/></svg>LinkedIn</span>
+        <span class="btn btn-mail is-placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 6.5h18v11H3zM3.5 7l8.5 6 8.5-6"/></svg>contact@company.com</span>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="More companies">
+      <a class="pager-card prev" href="2daloop.html"><span class="pager-label">← Previous</span><span class="pager-name">2DaLoop</span></a>
+      <a class="pager-card next" href="skyacres.html"><span class="pager-label">Next →</span><span class="pager-name">SkyAcres</span></a>
+    </nav>
+  </div>
 </main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="f-brand">techstars<span class="wm-us">_</span> Future of Food</p>
+      <p class="f-sub">Demo Day · Powered by Ecolab</p>
+    </div>
+    <nav aria-label="Companies">
+      <ul class="f-links">
+        <li><a href="../companies/shelflife.html">ShelfLife</a></li>
+        <li><a href="../companies/2daloop.html">2DaLoop</a></li>
+        <li><a href="../companies/greazly.html">Greazly</a></li>
+        <li><a href="../companies/skyacres.html">SkyAcres</a></li>
+        <li><a href="../companies/verde.html">Verde Biomaterials</a></li>
+        <li><a href="../companies/nanofreeze.html">NanoFreeze</a></li>
+        <li><a href="../companies/pinto.html">Pinto Robotics</a></li>
+        <li><a href="../companies/oscar.html">Oscar</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
 <script src="../menu.js"></script>
 </body>
 </html>
